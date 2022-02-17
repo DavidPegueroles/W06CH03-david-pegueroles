@@ -9,14 +9,14 @@ router.get("/things", async (req, res) => {
   res.json({ things });
 });
 
-router.get("/things/:id", async (req, res) => {
-  const thing = await Thing.findById(req.params.id);
+router.get("/things/:idThing", async (req, res) => {
+  const thing = await Thing.findById(req.params.idThing);
   res.status(200);
   res.json({ thing });
 });
 
-router.delete("/things/:id", async (req, res) => {
-  const thing = await Thing.findByIdAndDelete(req.params.id);
+router.delete("/things/:idThing", async (req, res) => {
+  const thing = await Thing.findByIdAndDelete(req.params.idThing);
   res.status(202);
   res.json({ thing });
 });
