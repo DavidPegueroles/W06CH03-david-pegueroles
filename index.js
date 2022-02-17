@@ -1,5 +1,6 @@
 require("dotenv").config();
-const debug = require("debug")("knowledge:root");
+const debug = require("debug")("things:root");
+const chalk = require("chalk");
 const connectToDatabase = require("./db");
 const setupServer = require("./server");
 
@@ -11,6 +12,6 @@ const mongoConnection = process.env.MONGO_STRING;
     await connectToDatabase(mongoConnection);
     await setupServer(port);
   } catch (error) {
-    debug(error.message);
+    debug(chalk.bgRed.white(error.message));
   }
 })();
