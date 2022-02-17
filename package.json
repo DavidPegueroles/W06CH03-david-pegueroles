@@ -1,0 +1,22 @@
+{
+  "name": "ch3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "puigdemont": "nodemon . -q"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "nodemon": "^2.0.15"
+  }
+}
