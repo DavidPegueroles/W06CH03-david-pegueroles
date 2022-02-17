@@ -1,4 +1,4 @@
-const debug = require("debug")("knowledge:database");
+const debug = require("debug")("things:database");
 const mongoose = require("mongoose");
 
 const connectToDatabase = (url) => {
